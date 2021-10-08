@@ -1,0 +1,565 @@
+/* --------------header---------- */
+.header-top {
+    background-color: var(--primary-color);
+}
+.header-top .list {
+    display: flex;
+    justify-content: space-between;
+    height: 26px;
+    align-items: center;
+}
+.header-top-list-left {
+    margin: 0;
+    list-style: none;
+    padding: 0 0 0 16px;
+}
+.header-top-list-left .item    {
+    display: inline-block;
+    position: relative;
+}
+.header-top-list-left .item .item-link  {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    margin-left: 16px;
+}
+.header-top-list-right {
+    margin: 0;
+    list-style: none;
+    padding: 0 16px 0 0 ;
+}
+.header-top-list-right .item    {
+    display: inline-block;
+    position: relative;
+}
+.header-top-list-right .item .item-link  {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    margin-right: 16px;
+}
+.item-gachdoc::after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    border-left: 1px solid var(--border-color);
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.header-with-search {
+    margin-top: 17px;
+    border-bottom: 1px solid var(--border-color);
+}
+.header-with-search .search-main {
+    width: 100%;
+    display: flex;
+    margin-top: 6px;
+}
+.logo-header {
+    width: 100%;
+}
+.header-with-search .search-main .search-btn    {
+    width: 42px;
+    height: 38px;
+    border: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+
+}
+.header-with-search .search-main .search-btn i  {
+    color: white;
+    font-size: 1.2rem;
+}
+.header-with-search .search-main .search-input  {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    padding: 0;
+    outline: none;
+    padding: 8px 16px;
+    font-size: 1.4rem;
+}
+.header-with-search .user   {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.header-with-search .user .dangnhap {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.header-with-search .user .dangky   {
+    font-size: 1.4rem;
+    margin-top: 6px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.header-with-search .cart-logo-header {
+    display: block;
+    text-align: center  ;
+    margin-top: 6px;
+}
+.cart-header {
+    font-size: 1.8rem;
+    margin-top: 12px;
+    color: #888888;
+    
+}
+.header-bottom-danhmuc {
+    border: 1px solid var(--border-color);
+    border-top-left-radius:2px ;
+    border-top-right-radius:2px ;
+    position: relative;
+}
+.header-bottom-danhmuc:hover .content-top-list {
+    display: block;
+}
+.header-bottom .header-bottom-danhmuc > span  {
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: 50px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding-left: 4px;
+}
+.header-bottom .header-bottom-danhmuc  > i {
+    font-size: 1.7rem;
+    padding-left: 34px;
+}
+.header-bottom .list-info-link {
+    font-size: 1.3rem;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #484848;
+}
+.header-bottom .list-info {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.header-bottom .hotline {
+    font-size: 1.2rem;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: red
+}
+.header-bottom .hotline i   {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-right: 6px;
+}
+
+
+
+.content-top-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 15px;
+    border: 1px solid var(--border-color);
+    /* height: 100%; */
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: none;
+    padding-bottom: 10px;
+    background-color: white;
+}
+.content-top-list-more {
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 1px 9px #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    right: -100%;
+    top: 0;
+    display: none;
+    z-index: 3;
+}
+.content-top-list-more .content-top-list-more-item:hover {
+    background-color: rgb(228, 224, 224);
+}
+.content-top-list-more .content-top-list-more-item-link {
+    text-decoration: none;
+    display: flex;
+    padding:10px 16px ;
+    font-size: 1.4rem;
+    align-items: center;
+    color: #484848;
+}
+.content-top-item {
+    display: block;
+    position: relative;
+}
+.content-top-item:hover {
+    background-color: rgb(228, 224, 224);
+}
+.content-top-item:hover .content-top-list-more {
+    display: block;
+}
+
+.content-top-item-link {
+    text-decoration: none;
+    display: flex;
+    padding:6px 16px ;
+    font-size: 1.5rem;
+    align-items: center;
+    color: #000;
+}
+.content-top-item-link .right-icon {
+    margin-left: auto;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.content-top-item-link-img {
+    width: 25px;
+    margin-right: 12px;
+}
+/* ------------------app------------- */
+.heading-danhmuc {
+    display: block;
+    font-size: 2rem;
+    line-height: 45px;
+    border-bottom: 1px solid var(--border-color);
+}
+.app-top {
+    margin-top: 20px;
+}
+.app-top-right {
+    border-bottom: 1px solid var(--border-color);
+    height: 100%;
+}
+.heading-dienthoai {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 45px;
+}
+.heading-sapxep {
+    width: 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+
+}
+.heading-sapxep span{
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    color: var(--text-color);
+}
+.heading-sapxep i {
+    font-size: 1.4rem;
+    padding-right: 8px;
+}
+.app-betwen {
+    margin-top: 8px;
+}
+.category {
+    border: 0.5px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.category .category-heading {
+    font-size: 1.4rem;
+    font-weight: 600;color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    line-height: 50px;
+}
+.category-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.category-item-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 18px;
+    border-bottom: 0.5px solid #EFEFEF
+}
+.category-item-link span {
+    display: inline-block;
+    padding: 0 12px 0 18px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    flex: 1;
+}
+.category-item-link span:hover {
+    color: var(--primary-color);
+}
+.category-item-link i   {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+}
+.iphone-items{
+    padding: 8px 6px;
+    border: 1px solid transparent;
+    display: block;
+    text-decoration: none;
+
+}
+.iphone-items:hover {
+    border-color: var(--border-color) ;
+    box-shadow: 1px 1px 4px #ccc;
+}
+.iphone-items:hover .add-cart {
+    opacity: 1;
+}
+.iphone-item-img{
+    width: 100%;
+}
+.iphone-item-name{
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.iphone-item-price{
+    display: block;
+    margin: 8px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: tomato;
+}
+.add-cart {
+    display: block;
+    margin-top: 45px;
+    background-color: tomato;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    border-radius: 2px;
+    transition: linear 0.2s;
+    opacity: 0;
+}
+.number-item {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEDED;
+    margin: 0 4px;
+}
+.list-number-page {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.number-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    
+
+}
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.app-bottom {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.app-bottom-heading-right,
+.app-bottom-heading-left {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.app-bottom-heading-right span,
+.app-bottom-heading-left span   {
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 16px 0;
+    font-weight: 400;
+    color: var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+    
+}
+.sanphamthem {
+    margin-top: 15px;
+}
+.sanphamthem-item {
+    padding: 4px;
+    border: 1px solid transparent;
+}
+.sanphamthem-item:hover {
+    border-color: var(--border-color);
+    box-shadow: 1px 1px 4px #ccc;
+}
+.sanphamthem-item:hover .add-cart-sanphamthem {
+    opacity: 1;
+}
+.sanphamthem-img {
+    width: 100%;
+    padding: 16px;
+}
+.sanphamthem-name{
+    display: block;
+    font-size: 1.4rem;
+}
+.sanphamthem-price{
+    display: block;
+    font-size: 1.5rem;
+    margin: 16px 0;
+    color: tomato;
+    font-weight: 500;
+}
+.add-cart-sanphamthem{
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    padding: 6px 8px;
+    background-color: tomato;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: linear 0.2s;
+}
+.meohay {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.meohay-img {
+    width: 100px;
+}
+.meohay-item {
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.meophay-noidung {
+    flex: 1;
+    margin-left: 8px;
+}
+.meophay-noidung span:nth-child(1),
+.meophay-noidung span:nth-child(2) {
+    display: block;
+}
+.meophay-noidung span:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.meophay-noidung span:nth-child(2) {
+    margin: 8px 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: 0.6;
+}
+.meohay-xemthem {
+    display: block;
+    font-size: 1.4rem;
+    text-align: right;
+    margin-top: 8px;
+    color: var(--primary-color);
+}
+/* ----------------footer--------- */
+.footer {
+    background-color: #202022;
+}
+.logo-footer {
+    width: 100%;
+}
+.footer-content {
+    padding-top: 20px;
+}
+.logo-bocongthuong {
+    max-width: 150px;
+}
+.ft-hotline,
+.ft-mota,
+.ft-add {
+    color: white;
+    display: block;
+    margin: 16px 0;
+    font-size: 1.3rem;
+    opacity: 0.6;
+}
+.chinhsach-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.ft-chinhsach {
+    color: white;
+    padding: 16px 0;
+    display: block;
+    font-size: 1.6rem;
+    /* color: #A6A6A7; */
+}
+.chinhsach-link {
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+    color:#A6A6A7;
+    padding: 4px 0;
+}
+.chinhsach-link:hover {
+    color: white;
+}
+.ft-fb-icon,
+.ft-yt-icon,
+.ft-ins-icon,
+.ft-google-icon {
+    color: #A6A6A7;
+    font-size: 3.8rem;
+    cursor: pointer;
+}
+.ft-fb-icon:hover {
+    color: #339AF0;
+}
+.ft-yt-icon:hover {
+    color: red;
+}
+.ft-ins-icon:hover {
+    color: #F2000C;
+}
+.ft-google-icon:hover {
+    color: yellow;
+}
+.ft-icon {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 0;
+}
+.ft-help {
+    padding: 0 20px;
+}
+.ft-help span {
+    display: block;
+    color: #A6A6A7;
+    font-size: 1.4rem;
+}
+.ft-help span:nth-child(2) {
+    margin: 4px 0 16px 0 ;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+}
+.ft-help span:nth-child(4) {
+    margin: 4px 0 16px 0 ;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+}
